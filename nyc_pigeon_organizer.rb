@@ -30,16 +30,18 @@ def get_pigeon_info(data, name)
   
   info = {}
   data.each do |category, fact|
-    categories = fact.reduce([]) { |memo, (option, names)| 
-      # p option
-      # p names
-      if names.include?(name)
-        memo << option.to_s
-      end
-    }
+    # categories = fact.reduce([]) { |memo, (option, names)| 
+    #   # p option
+    #   # p names
+    #     memo << option.to_s if names.include?(name) # this breaks the code
+    # }
     
-    # p categories
-    # fact = 
+    fact.each do |option, name|
+      p option
+      # info[category] = option if names.include?(name)  
+    end
+    
+    
   end
   
   pigeon[name] = info
