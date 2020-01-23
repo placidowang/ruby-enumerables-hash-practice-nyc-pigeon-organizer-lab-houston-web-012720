@@ -48,7 +48,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_info = get_pigeon_info(data, pigeon_names)
   
-  p pigeon_info
+  p pigeon_names
   
   for name in pigeon_names do
     
