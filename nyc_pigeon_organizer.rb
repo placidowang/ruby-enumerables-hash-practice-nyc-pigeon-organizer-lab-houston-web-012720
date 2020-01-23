@@ -44,10 +44,8 @@ def nyc_pigeon_organizer(data)
   
   pigeon_names = get_pigeon_names(data)
   
-  pigeon_info = {}
-  
   for name in pigeon_names do
-    pigeon_info[name] = get_pigeon_info(data, pigeon_names)
+    pigeons[name] = get_pigeon_info(data, pigeon_names)
   end
   
   return pigeons
