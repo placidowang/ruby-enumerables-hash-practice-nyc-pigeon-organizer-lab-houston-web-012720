@@ -1,12 +1,4 @@
-def nyc_pigeon_organizer(data)
-  pigeons = {}
-  
-  pigeon_names = get_pigeon_names(data)
-  
-  
-  return pigeons
-end
-
+require 'pp'
 
 def get_pigeon_names(data)
   
@@ -49,6 +41,22 @@ def get_pigeon_info(data, name)
   return pigeon
 end
 
+def nyc_pigeon_organizer(data)
+  pigeons = {}
+  
+  pigeon_names = get_pigeon_names(data)
+  
+  pigeon_info = get_pigeon_info(data, pigeon_names)
+  
+  p pigeon_info
+  
+  for name in pigeon_names do
+    
+  end
+  
+  return pigeons
+end
+
 
 pigeon_data = {
   :color => {
@@ -69,5 +77,6 @@ pigeon_data = {
   }
 }
 
+nyc_pigeon_organizer(data)
 get_pigeon_info(pigeon_data, "Peter Jr.")
 
