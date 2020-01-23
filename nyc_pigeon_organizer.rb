@@ -28,7 +28,7 @@ def get_pigeon_info(data, name)
   #   }
   # }
   
-  info[category] = []
+  
   data.each do |category, fact|
     # categories = fact.reduce([]) { |memo, (option, names)| 
     #   # p option
@@ -36,8 +36,9 @@ def get_pigeon_info(data, name)
     #     memo << option.to_s if names.include?(name) # this breaks the code
     # }
     
+    info[category] = []
     fact.each do |option, names|
-      # info[category] << option.to_s if names.include?(name)  
+      info[category] << option.to_s if names.include?(name)  
     end
     
     
