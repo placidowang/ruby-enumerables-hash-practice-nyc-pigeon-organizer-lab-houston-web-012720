@@ -36,8 +36,8 @@ def get_pigeon_info(data, name)
     #     memo << option.to_s if names.include?(name) # this breaks the code
     # }
     
-    fact.each do |option, name|
-      p name
+    fact.each do |option, names|
+      p option
       # info[category] = option if names.include?(name)  
     end
     
