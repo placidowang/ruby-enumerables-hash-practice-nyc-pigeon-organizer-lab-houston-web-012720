@@ -28,6 +28,7 @@ def get_pigeon_info(data, name)
   #   }
   # }
   
+  info = {}
   
   data.each do |category, fact|
     # categories = fact.reduce([]) { |memo, (option, names)| 
