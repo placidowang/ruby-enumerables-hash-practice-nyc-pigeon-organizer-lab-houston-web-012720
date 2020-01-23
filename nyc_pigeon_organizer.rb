@@ -42,8 +42,8 @@ def get_pigeon_info(data, name)
     
     
   end
-  pigeon[name] = info
   p info
+  pigeon[name] = info
   # p pigeon
 end
 
