@@ -42,7 +42,7 @@ def get_pigeon_info(data, name)
     
     
   end
-  
+  p info
   pigeon[name] = info
   # p pigeon
 end
