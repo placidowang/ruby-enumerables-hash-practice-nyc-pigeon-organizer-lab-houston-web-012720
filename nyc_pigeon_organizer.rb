@@ -49,22 +49,6 @@ def get_pigeon_info(data, name)
 end
 
 
-
-test_data = {
-  :color => {
-    :brown => ["Luca"],
-    :black => ["Lola"],
-  },
-  :gender => {
-    :male => ["Luca"],
-    :female => ["Lola"]
-  },
-  :lives => {
-    "Central Park" => ["Lola"],
-    "Library" => ["Luca"],
-  }
-}
-
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
