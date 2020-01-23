@@ -12,7 +12,6 @@ def get_pigeon_names(data)
 end
 
 def get_pigeon_info(data, name)
-  pigeon = {}
   
   # info = data.reduce({}) { |memo, (category, fact) |
   #   memo[category] = fact.reduce{ |memo, (option, names) | 
@@ -37,8 +36,7 @@ def get_pigeon_info(data, name)
     
   end
   
-  pigeon[name] = info
-  return pigeon
+  return info
 end
 
 def nyc_pigeon_organizer(data)
