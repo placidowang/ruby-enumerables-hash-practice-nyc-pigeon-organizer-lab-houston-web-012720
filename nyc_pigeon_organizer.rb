@@ -37,7 +37,7 @@ def get_pigeon_info(data, name)
     # }
     
     fact.each do |option, name|
-      p option
+      p name
       # info[category] = option if names.include?(name)  
     end
     
