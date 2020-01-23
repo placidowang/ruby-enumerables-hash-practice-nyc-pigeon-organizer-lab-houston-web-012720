@@ -77,6 +77,6 @@ pigeon_data = {
   }
 }
 
-nyc_pigeon_organizer(data)
+nyc_pigeon_organizer(pigeon_data)
 get_pigeon_info(pigeon_data, "Peter Jr.")
 
